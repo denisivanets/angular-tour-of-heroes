@@ -8,8 +8,6 @@ import {HeroService} from "./hero.service";
 import {DashboardComponent} from "./dashboard.component";
 import {AppRoutingModule} from "./app-routing.module";
 import {HttpModule} from "@angular/http";
-import {InMemoryWebApiModule} from "angular-in-memory-web-api";
-import {InMemoryDataService} from "./in-memory-data.service";
 import {HeroSearchComponent} from "./hero-search.component";
 
 @NgModule({
@@ -17,8 +15,7 @@ import {HeroSearchComponent} from "./hero-search.component";
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryDataService)
+    HttpModule
   ],
   declarations: [
     AppComponent,
